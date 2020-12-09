@@ -10,11 +10,8 @@ const SingleQuestion = ({id,title,info}) => {
                 <button className="btn-toggle" onClick={()=> setShowInfo(!showInfo)}>
                     {showInfo ? <AiOutlineMinusCircle/> : <AiOutlinePlusCircle/>}
                 </button>
-                {showInfo &&  <p>{info}</p>}
             </section>
-            
-           
-            
+            {showInfo &&  <p>{info}</p>} 
         </article>
     )
 }

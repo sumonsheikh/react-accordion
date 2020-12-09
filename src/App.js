@@ -5,12 +5,13 @@ import Questions from './Questions';
 function App() {
   const [showQuestions, setQuestion] = useState(data);
   return (
-    <main className="container">
-      <div className="section-title">
+    <main>
+      <div className="container">
         <h2>Question and answer about login</h2>
+        <Questions showQuestions = {showQuestions} />
       </div>
-      <Questions showQuestions = {showQuestions} />
     </main>
+    
   );
 }
 
